@@ -58,8 +58,6 @@ Context API: For efficient global state management (e.g., cart state, user authe
 
 JWT (JSON Web Tokens): For secure and stateless user authentication.
 
-CSS / Tailwind CSS (if applicable): For styling and responsive layouts.
-
 JavaScript (ES6+): The core language for application logic.
 
 🚀 Getting Started
