@@ -1,0 +1,41 @@
+/* Write your CSS here */
+
+.checkout-button {
+  width: 80%;
+  max-width: 200px;
+  background-color: #0b69ff;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+}
+.check-out-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .checkout-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .check-out-section {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 767px) {
+  .check-out-section {
+    align-items: flex-end;
+  }
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
