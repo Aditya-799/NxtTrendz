@@ -1,184 +1,85 @@
-In this project, let's build a **Nxt Trendz - Cart Features** by applying the concepts we have learned till now.
+🛍️ Nxt Trendz - Your Modern E-commerce Destination
+Elevate Your Online Shopping Journey!
+Welcome to Nxt Trendz, a feature-rich e-commerce platform crafted with React. This application provides a seamless and personalized online shopping experience, boasting robust user authentication, dynamic product filtering, and an intuitive cart management system, all designed to cater to both regular and prime users.
 
-### Refer to the video below:
+✨ Key Features
+Nxt Trendz is built to offer a comprehensive and engaging user experience:
 
-<br/>
-<div style="text-align: center;">
-  <video style="max-width:70%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12);outline:none;" loop="true" autoplay="autoplay" controls="controls" muted>
-    <source src="https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-output.mp4" type="video/mp4">
-  </video>
-</div>
-<br/>
+🔐 Secure User Authentication (JWT):
 
-### Design Files
+User Registration & Login: Effortlessly sign up and log in to access personalized features.
 
-<details>
-<summary>Click to view</summary>
+Token-Based Authorization: Leverages JSON Web Tokens (JWT) for secure and stateless authentication, ensuring that protected routes and premium content are exclusively accessible to authorized users.
 
-- [Extra Small (Size < 576px) and Small (Size >= 576px)](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-sm-output-v0.png)
-- [Medium (Size >= 768px), Large (Size >= 992px) and Extra Large (Size >= 1200px)](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-lg-output.png)
+🏠 Dynamic Home Page:
 
-</details>
+A captivating landing page to showcase featured products, trending items, and special offers.
 
-### Set Up Instructions
+🔍 Advanced Product Filtering & Search:
 
-<details>
-<summary>Click to view</summary>
+Search Functionality: Quickly find products by name or description using the integrated search bar.
 
-- Download dependencies by running `npm install`
-- Start up the app using `npm start`
-</details>
+Category Filters: Browse products by specific categories (e.g., Electronics, Apparel, Home Goods).
 
-### Completion Instructions
+Rating Filters: Filter products based on customer ratings, from 1-star to 5-star.
 
-<details>
-<summary>Functionality to be added</summary>
-<br/>
+🛒 Intelligent Cart Management:
 
-The app must have the following functionalities
+Add to Cart: Easily add products to your shopping cart.
 
-- When an unauthenticated user tries to access the **Cart** Route, then the page should be navigated to **Login** Route
+Quantity Control: Increment or decrement item quantities directly within the cart.
 
-- Following are the features to be implemented
+Remove Item: Effortlessly remove individual products.
 
-  - Feature 1
+Clear Cart: Empty your entire shopping cart with a single click.
 
-    - When an authenticated user tries to add the same product multiple times
-      - The quantity of the product should be updated accordingly, and the count of the cart items in the header should be remained same
+Dynamic Total Value: Real-time calculation of the total cart value, updating instantly with every change.
 
-  - Feature 2
+🌟 Tailored Shopping Experiences:
 
-    - The total amount and number of items in the cart should be displayed in the **Cart** Route
+Regular User View: Standard access to all product listings and basic features.
 
-  - Feature 3
+Prime User Exclusive Content: A distinct section or additional benefits (e.g., exclusive products, special discounts) accessible only to authenticated "Prime" users, showcasing conditional rendering based on user roles/status.
 
-    - In each cart item in the cart
-      - When the plus icon is clicked, then the quantity of the product should be incremented by one
-      - When the minus icon is clicked, then the quantity of the product should be decremented by one
-      - When the quantity of the product is one and the minus icon is clicked, then the respective product should be removed from the cart
-      - Based on the quantity of the product, the product price and the Cart Summary, i.e the total cost should be updated accordingly
+🌐 Fully Responsive Design:
 
-  - Feature 4
+Enjoy a consistent, beautiful, and highly functional experience across all devices, from large desktops to tablets and mobile phones.
 
-    - When an authenticated user clicks on the remove button, cart item should be removed from the cart list
+🚫 Custom Not Found Page:
 
-  - Feature 5
+A friendly custom 404 page for unmatched routes, ensuring a graceful fallback.
 
-    - When an authenticated user clicks on the **Remove All** button, all the cart items should be removed from the cart and [Empty Cart View](https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-empty-cart-view.png) should be displayed
+💻 Technologies Used
+React.js: A powerful JavaScript library for building user interfaces.
 
-- The `CartContext` has an object as a value with the following properties
-  - `cartList` - this key stores the cart items
-  - `removeAllCartItems` - this method is used to remove all the cart items in the `cartList`
-  - `addCartItem` - this method adds the cart item to the `cartList`
-  - `removeCartItem` - this method removes the cart item from the `cartList`
-  - `incrementCartItemQuantity` - this method increases the quantity of a product in the `cartList`
-  - `decrementCartItemQuantity` - this method decreases the quantity of a product in the `cartList`
+React Router Dom: For declarative routing within the application.
 
-</details>
+Context API: For efficient global state management (e.g., cart state, user authentication status).
 
-<details>
-<summary>Components Structure</summary>
+JWT (JSON Web Tokens): For secure and stateless user authentication.
 
-<br/>
-<div style="text-align: center;">
-    <img src="https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-cart-features-component-structure-breakdown.png" alt="component structure breakdown" style="max-width:100%;box-shadow:0 2.8px 2.2px rgba(0, 0, 0, 0.12)">
-</div>
-<br/>
+CSS / Tailwind CSS (if applicable): For styling and responsive layouts.
 
-</details>
+JavaScript (ES6+): The core language for application logic.
 
-<details>
-<summary>Implementation Files</summary>
-<br/>
+🚀 Getting Started
+Follow these steps to get Nxt Trendz up and running on your local machine.
 
-Use these files to complete the implementation:
+Prerequisites
+Make sure you have Node.js and npm (or yarn) installed.
 
-- `src/App.js`
-- `src/components/Cart/index.js`
-- `src/components/Cart/index.css`
-- `src/components/CartItem/index.js`
-- `src/components/CartItem/index.css`
-- `src/components/CartSummary/index.js`
-- `src/components/CartSummary/index.css`
-</details>
+Node.js (LTS version recommended)
 
-### Quick Tips
+npm (comes with Node.js) or Yarn
 
-<details>
-<summary>Click to view</summary>
-<br>
+Installation
+Clone the repository:
 
-- The `line-height` CSS property sets the height of a line box. It's commonly used to set the distance between lines of text
+git clone https://github.com/Aditya-799/NxtTrendz.git
+cd NxtTrendz
 
-  ```
-  line-height: 1.5;
-  ```
+Install dependencies:
 
-    <br/>
-    <img src="https://assets.ccbp.in/frontend/react-js/line-height-img.png" alt="line height" style="width:90%; max-width: 600px;"/>
-
-- The array method `find()` returns the first item's value that satisfies the provided testing function. If no item is found, it returns `undefined`
-
-  **Syntax**: `arr.find(Testing Function)`
-
-</details>
-
-### Important Note
-
-<details>
-<summary>Click to view</summary>
-
-<br/>
-
-**The following instructions are required for the tests to pass**
-
-- `BsPlusSquare`, `BsDashSquare` icons from `react-icons` should be used for **plus** and **minus** buttons in cart item
-- The Cart Item should consist of two HTML button elements with data-testid attribute values as **plus** and **minus** respectively
-- `AiFillCloseCircle` icon from react-icons should be used for **remove** button in cartItem
-- The Cart Item should consist of an HTML button element with data-testid attribute values as **remove**
-- The product image in **Cart Item** Route should have the alt as `title` of the product
-
-- Prime User credentials
-
-  ```text
-   username: rahul
-   password: rahul@2021
-  ```
-
-- Non-Prime User credentials
-
-  ```text
-   username: raja
-   password: raja@2021
-  ```
-
-</details>
-
-### Resources
-
-<details>
-<summary>Colors</summary>
-
-<br/>
-
-<div style="background-color: #0b69ff; width: 150px; padding: 10px; color: white">Hex: #0b69ff</div>
-<div style="background-color: #171f46; width: 150px; padding: 10px; color: white">Hex: #171f46</div>
-<div style="background-color: #616e7c; width: 150px; padding: 10px; color: white">Hex: #616e7c</div>
-<div style="background-color: #ffffff; width: 150px; padding: 10px; color: black">Hex: #ffffff</div>
-
-</details>
-
-<details>
-<summary>Font-families</summary>
-
-- Roboto
-
-</details>
-
-> ### _Things to Keep in Mind_
->
-> - All components you implement should go in the `src/components` directory.
-> - Don't change the component folder names as those are the files being imported into the tests.
-> - **Do not remove the pre-filled code**
-> - Want to quickly review some of the concepts you’ve been learning? Take a look at the Cheat Sheets.
-# NxtTrendz
+npm install
+# or
+yarn install
